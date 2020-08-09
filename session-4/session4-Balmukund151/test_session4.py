@@ -30,14 +30,14 @@ def test_readme_exists():
     assert os.path.isfile("session-4/session4-Balmukund151/README.md"), "README.md file missing!"
 
 def test_readme_contents():
-    readme = open("README.md", "r")
+    readme = open("session-4/session4-Balmukund151/README.md", "r")
     readme_words = readme.read().split()
     readme.close()
     assert len(readme_words) >= 100, "Make your README.md file interesting! Add atleast 500 words"
 
 def test_readme_proper_description():
     READMELOOKSGOOD = True
-    f = open("README.md", "r")
+    f = open("session-4/session4-Balmukund151/README.md", "r")
     content = f.read()
     f.close()
     for c in README_CONTENT_CHECK_FOR:
@@ -47,7 +47,7 @@ def test_readme_proper_description():
     assert READMELOOKSGOOD == True, "You have not described all the functions/class well in your README.md file"
 
 def test_readme_file_for_formatting():
-    f = open("README.md", "r")
+    f = open("session-4/session4-Balmukund151/README.md", "r")
     content = f.read()
     f.close()
     assert content.count("#") >= 10
