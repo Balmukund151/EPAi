@@ -27,7 +27,7 @@ README_CONTENT_CHECK_FOR = [
 ]
 
 def test_readme_exists():
-    assert os.path.isfile("README.md"), "README.md file missing!"
+    assert os.path.isfile("session-4/session4-Balmukund151/README.md"), "README.md file missing!"
 
 def test_readme_contents():
     readme = open("README.md", "r")
